@@ -1,0 +1,62 @@
+<section class="contacts section">
+    <div class="container">
+        <div class="contacts__inner">
+            @@if(context.contactsPage){
+            <h2 class="contacts-page-title contacts__title h2">Контакты</h2>
+            }
+
+            <div class="contacts__body">
+                <div class="contacts__content">
+                    @@if(!context.contactsPage){
+                    <h2 class="contacts__title h2">Наши контакты</h2>
+                    }
+                    <div class="contacts__box">
+                        <div class="contacts__box-item">
+                            <svg class="svg-email-dims">
+                                <use xlink:href="sprite.svg#email"></use>
+                            </svg>
+                            <div class="contacts__box-right">
+                                <a href="mailto:o.kadr@way-n.ru"
+                                    class="contacts__box-text1 contacts__box-text1_link">o.kadr@way-n.ru</a>
+                                <div class="contacts__box-text2">Напишите нам!</div>
+                            </div>
+                        </div>
+                        <div class="contacts__box-item">
+                            <svg class="svg-call-dims">
+                                <use xlink:href="sprite.svg#call"></use>
+                            </svg>
+                            <div class="contacts__box-right">
+                                <a href="tel:+79660226487" class="contacts__box-text1 contacts__box-text1_link">+7 966
+                                    022
+                                    64 87</a>
+                                <div class="contacts__box-text2">Звоните нам!</div>
+                            </div>
+                        </div>
+                        <div class="contacts__box-item">
+                            <svg class="svg-place-dims">
+                                <use xlink:href="sprite.svg#place"></use>
+                            </svg>
+                            <div class="contacts__box-right">
+                                <div class="contacts__box-text1">пгт. Забайкальск, ул. Комсомольская 50А</div>
+                                <div class="contacts__box-text2">Приходите к нам!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__map">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a
+                            href="https://yandex.ru/maps/21949/zabaykalsky-krai/house/komsomolskaya_ulitsa_50a/ZUgBaARjSUwGVEJuamJ3dXVjZwo=/?ll=117.330918%2C49.649033&utm_medium=mapframe&utm_source=maps&z=16.99"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Комсомольская улица, 50А —
+                            Яндекс Карты</a><iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=117.330918%2C49.649033&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxODM0Njg2MjcxEn7QoNC-0YHRgdC40Y8sINC_0L7RgdGR0LvQvtC6INCz0L7RgNC-0LTRgdC60L7Qs9C-INGC0LjQv9CwINCX0LDQsdCw0LnQutCw0LvRjNGB0LosINCa0L7QvNGB0L7QvNC-0LvRjNGB0LrQsNGPINGD0LvQuNGG0LAsIDUw0JAiCg1uqepCFZyYRkI%2C&z=16.99"
+                            width="100%" height="400" frameborder="1" allowfullscreen="true"
+                            style="position:relative;"></iframe></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

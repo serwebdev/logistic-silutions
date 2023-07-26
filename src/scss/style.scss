@@ -1,0 +1,34 @@
+// Внешние файлы ======================================================
+@import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/nouislider/dist/nouislider.min';
+
+// Из папки vendor =====================================================
+// Миксины =======================================================
+@import 'mixins';
+
+// Базовые стили =======================================================
+@import 'fonts';
+@import 'vars';
+@import 'global';
+
+// Компоненты ===========================================================
+@import 'components/header';
+@import 'components/footer';
+@import 'components/menu-burger';
+@import 'components/feedback';
+@import 'components/contacts';
+@import 'components/breadcrumbs';
+
+// Quiz========
+@import 'components/quiz-pages/quiz-page-1';
+@import 'components/quiz-pages/quiz-page-2';
+@import 'components/quiz-pages/quiz-page-3';
+@import 'components/quiz-pages/quiz-page-4';
+@import 'components/quiz-pages/quiz-page-5';
+@import 'components/quiz-pages/quiz-page-6';
+
+// Страницы ================================================================
+@import 'pages/index';
+@import 'pages/blog';
+@import 'pages/post';
+@import 'pages/contacts';

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('partials/head.html',{title:'Главная'})
+
+<body class="post-page">
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            @@include('partials/breadcrumbs.html',{page:'post'})
+
+            <section class="post">
+                <div class="container">
+                    <div class="post__inner">
+                        <h2 class="post__title title-blog h2">Блог</h2>
+                        <div class="post__subtitle subtitle-blog">Все полезные статтьи для Вас тут и мы рады что Вам они
+                            требуеться.</div>
+                        <div class="post__body">
+                            <div class="post__col post__col_1">
+                                <img src="img/post-1.png" alt="Авто" class="post__img">
+                            </div>
+                            <div class="post__col post__col_2">
+                                <div class="post__body-top">
+                                    <div class="post__body-date">20 октября, 2016, </div>
+                                    <div class="post__body-author">by <a href="#">YuriPakin</a></div>
+                                </div>
+                                <h4 class="post__body-title">Из Китая в Байкал выехал грузовой поезд по новому
+                                    грузовому ж/д маршруту</h4>
+                                <p class="post__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                    sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum.
+                                    <br><br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            @@include('partials/feedback.html',{img:true})
+
+            <!-- contacts------------------------------------------------------------------- -->
+            @@include('partials/contacts.html')
+
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

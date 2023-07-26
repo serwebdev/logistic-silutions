@@ -1,0 +1,133 @@
+.quiz-page-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-right: 110px;
+
+  @media (max-width: 880px) {
+    padding-right: 0;
+  }
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+
+  &__col {
+  }
+
+  &__title {
+  }
+
+  &__range-box {
+    margin-bottom: 45px;
+
+    &_1 {
+    }
+
+    &_2 {
+    }
+  }
+
+  &__number-box {
+    color: $grayBA;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__number-1 {
+  }
+
+  &__number-2 {
+  }
+
+  &__label {
+    color: $white;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  &__checkox {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: url(../../../img/quiz-checkbox-not-checked.svg) no-repeat;
+    transition: 0.2s;
+
+    &:checked {
+      background: url(../../../img/quiz-checkbox-checked.svg) no-repeat;
+    }
+  }
+}
+
+// noUiSlider==============================
+.slider-styled {
+  border: none;
+  background: #f0f0f0;
+  box-shadow: none;
+  border-radius: 0;
+  height: 5px;
+  padding: 0 17px;
+}
+
+.noUi-connects {
+  border-radius: 0;
+  margin: 0 -17px;
+}
+
+.noUi-connect {
+  background: $red;
+}
+.noUi-handle {
+  background: $red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: none;
+}
+.noUi-horizontal .noUi-handle {
+  width: 35px;
+  height: 35px;
+  top: -15px;
+}
+.noUi-handle:after,
+.noUi-handle:before {
+  content: none;
+}
+.noUi-touch-area {
+}
+
+.noUi-horizontal .noUi-tooltip {
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  height: 100%;
+  transform: translate(-51%, -51%);
+  border: none;
+  border-radius: 5px;
+  background: $red;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

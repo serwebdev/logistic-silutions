@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('partials/head.html',{title:'Главная'})
+
+<body class="contacts-page">
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            @@include('partials/breadcrumbs.html',{page:'contacts'})
+
+
+
+            <!-- contacts------------------------------------------------------------------- -->
+            @@include('partials/contacts.html',{contactsPage:true})
+
+            @@include('partials/feedback.html',{img:true})
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

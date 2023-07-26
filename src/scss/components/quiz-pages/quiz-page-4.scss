@@ -1,0 +1,14 @@
+.quiz-page-4 {
+  .quiz-page-1__form-elements {
+    gap: 100px;
+    margin-bottom: 170px;
+
+    @media (max-width: 1100px) {
+      gap: 50px;
+    }
+    @media (max-width: 880px) {
+      gap: 10px;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.contacts-page {
+  .contacts {
+    margin-top: 69px;
+
+    @media (max-width: 850px) {
+      margin-top: 30px;
+    }
+  }
+
+  .contacts__body {
+    flex-direction: column;
+    gap: 50px;
+
+    @media (max-width: 850px) {
+      gap: 30px;
+    }
+  }
+
+  .contacts__box {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1074px;
+    margin: 0 auto;
+
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+  }
+
+  .contacts__map {
+    max-width: 100%;
+  }
+}

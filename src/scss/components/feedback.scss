@@ -1,0 +1,227 @@
+.feedback {
+  @media (max-width: 768px) {
+    border-radius: 10px;
+    background: #efefef;
+  }
+
+  &__inner {
+    padding: 50px 110px;
+    border-radius: 10px;
+    border: 1px solid $grayBA;
+
+    @media (max-width: 880px) {
+      padding: 50px 50px;
+    }
+    @media (max-width: 768px) {
+      padding: 20px 0px;
+      border: none;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    @media (max-width: 880px) {
+      flex-direction: column-reverse;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__caption {
+  }
+
+  &__title {
+    color: $black;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    @media (max-width: 350px) {
+      font-size: 22px;
+    }
+
+    span {
+      color: $red;
+    }
+  }
+
+  &__subtitle {
+    color: $black;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__img-wrap {
+  }
+
+  &__img {
+  }
+
+  &__form {
+    max-width: 960px;
+
+    @media (max-width: 1200px) {
+      max-width: 500px;
+    }
+  }
+
+  &__form-body {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+  }
+
+  &__form-input,
+  &__form-phone {
+    border-radius: 10px;
+    background: #efefef;
+    max-width: 300px;
+    width: 100%;
+
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 20px 10px;
+    border: none;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      max-width: none;
+    }
+    @media (max-width: 768px) {
+      background: $white;
+    }
+
+    &::placeholder {
+      color: $grayBA;
+    }
+  }
+
+  &__form-input {
+  }
+
+  &__form-phone {
+  }
+
+  &__form-btn {
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  &__form-agree {
+    color: $grayBA;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: -80px;
+
+    @media (max-width: 1200px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (max-width: 350px) {
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.svg-arrow-right-dims {
+}
+
+// feedback.main======================================================
+.feedback.main {
+  background-image: url(../../img/feedback-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 90px;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+  }
+
+  .feedback__inner {
+    padding: 54px 0px 38px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: none;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      padding: 20px 0;
+    }
+  }
+
+  .feedback__top {
+    margin-bottom: 0;
+  }
+
+  .feedback__caption {
+    margin-top: 50px;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
+  }
+
+  .feedback__title {
+    color: $white;
+  }
+
+  .feedback__subtitle {
+    color: $white;
+    font-size: 36px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .feedback__form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feedback__form-input,
+  .feedback__form-phone {
+    padding: 24px 10px;
+  }
+
+  .feedback__form-agree {
+    margin-right: 0;
+  }
+}

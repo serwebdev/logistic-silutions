@@ -1,0 +1,12 @@
+.quiz-page-3 {
+  .quiz-page-1__form-elements {
+    gap: 110px;
+
+    @media (max-width: 1100px) {
+      gap: 50px;
+    }
+    @media (max-width: 880px) {
+      gap: 10px;
+    }
+  }
+}

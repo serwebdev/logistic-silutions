@@ -1,0 +1,43 @@
+// @font-face {
+//   font-family: 'Roboto';
+//   src: local('Roboto-Regular'),
+//     url('../fonts/Roboto-Regular.woff2') format('woff2');
+//   font-display: swap;
+//   font-style: normal;
+//   font-weight: 400;
+// }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Regular'),
+    url('../fonts/Gilroy-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Medium'),
+    url('../fonts/Gilroy-Medium.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Semibold'),
+    url('../fonts/Gilroy-Semibold.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Bold'), url('../fonts/Gilroy-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}

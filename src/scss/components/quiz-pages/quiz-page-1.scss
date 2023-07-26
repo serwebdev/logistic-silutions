@@ -1,0 +1,84 @@
+// Общие стили для quiz-page
+.quiz-page-title {
+  color: $white;
+  font-family: Gilroy;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 53px;
+
+  @media (max-width: 880px) {
+    font-size: 30px;
+  }
+  @media (max-width: 650px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+// quiz-page-1=============================================================
+.quiz-page-1 {
+  &__title {
+  }
+
+  &__form-elements {
+    display: flex;
+    gap: 50px;
+
+    @media (max-width: 1000px) {
+      gap: 20px;
+    }
+    @media (max-width: 880px) {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (max-width: 880px) {
+      gap: 10px;
+    }
+  }
+
+  &__label {
+    color: $white;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    @media (max-width: 880px) {
+      font-size: 20px;
+    }
+    @media (max-width: 650px) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  &__checkbox {
+    appearance: none;
+    min-width: 24px;
+    height: 24px;
+    background: url(../../../img/quiz-checkbox-not-checked.svg) no-repeat;
+    transition: 0.2s;
+
+    &:checked {
+      background: url(../../../img/quiz-checkbox-checked.svg) no-repeat;
+    }
+  }
+}

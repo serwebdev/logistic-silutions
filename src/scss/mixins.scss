@@ -1,0 +1,17 @@
+// @mixin font-face($font-falily, $url, $weight) {
+//   @font-face {
+//     font-family: '#{$font-falily}';
+//     src: local('#{$font-falily}'), url('../fonts/#{$url}.woff2') format('woff2'),
+//       url('../fonts/#{$url}.woff') format('woff');
+//     font-display: swap;
+//     font-style: normal;
+//     font-weight: #{$weight};
+//   }
+// }
+
+// =========================================================================
+// background-image: url('../../img/test.jpg');
+// background-image: image-set(
+//   url('../../img/test.webp'),
+//   url('../../img/test.jpg')
+// );

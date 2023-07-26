@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.wrapper {
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $black;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.h2 {
+  color: $red;
+  font-family: Gilroy;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  span {
+    color: $black;
+  }
+}
+
+// Спрайт - классы===========================
+.svg-call-dims {
+  width: 24px;
+  height: 24px;
+}
+.svg-email-dims {
+  width: 24px;
+  height: 24px;
+}
+.svg-arrow-right-dims {
+  width: 24px;
+  height: 25px;
+}
+.svg-arrow-bottom-dims {
+  width: 24px;
+  height: 24px;
+}
+.svg-place-dims {
+  width: 24px;
+  height: 24px;
+}
+
+// =============================================
+
+.btn {
+  color: $white;
+  font-family: Gilroy;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 19px 0;
+  background: $red;
+  border-radius: 10px;
+  border: 1px solid $red;
+  width: 300px;
+  transition: 0.2s;
+
+  &:hover {
+    background: $white;
+    color: $red;
+  }
+
+  .svg-arrow-right-dims {
+    stroke: $white;
+    fill: $white;
+    transition: 0.2s;
+  }
+
+  &:hover .svg-arrow-right-dims {
+    stroke: $red;
+    fill: $red;
+  }
+}
+
+.section {
+  margin-top: 100px;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+}

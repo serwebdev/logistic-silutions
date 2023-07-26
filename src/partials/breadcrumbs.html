@@ -1,0 +1,33 @@
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__menu">
+            <li class="breadcrumbs__menu-item">
+                <a href="index.html" class="breadcrumbs__menu-link">Главная</a>
+            </li>
+            <li class="breadcrumbs__menu-item">
+                <svg class="svg-arrow-right-dims">
+                    <use xlink:href="sprite.svg#arrow-right"></use>
+                </svg>
+            </li>
+            @@if(page==='blog'){
+            <li class="breadcrumbs__menu-item active">Блог</li>
+            }
+            @@if(page==='contacts'){
+            <li class="breadcrumbs__menu-item active">Контакты</li>
+            }
+            @@if(page==='post'){
+            <li class="breadcrumbs__menu-item">
+                <a href="blog.html" class="breadcrumbs__menu-link">Блог</a>
+            </li>
+            <li class="breadcrumbs__menu-item">
+                <svg class="svg-arrow-right-dims">
+                    <use xlink:href="sprite.svg#arrow-right"></use>
+                </svg>
+            </li>
+            <li class="breadcrumbs__menu-item active">Из Китая в Байкал выехал грузовой поезд по новому грузовому ж/д
+                маршруту
+            </li>
+            }
+        </ul>
+    </div>
+</div>

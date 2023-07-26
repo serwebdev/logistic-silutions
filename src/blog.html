@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('partials/head.html',{title:'Главная'})
+
+<body class="blog-page">
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            @@include('partials/breadcrumbs.html',{page:'blog'})
+            <!-- @@include('partials/breadcrumbs.html',{page:'post'}) -->
+
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__inner">
+                        <h2 class="blog__title h2 title-blog">Блог</h2>
+                        <div class="blog__subtitle subtitle-blog">Все полезные статтьи для Вас тут и мы рады что Вам они
+                            требуеться.</div>
+                        <div class="blog__posts">
+
+                            <div class="blog-card">
+                                <div class="blog-card__top">
+                                    <div class="blog-card__date">20 октября, 2016, </div>
+                                    <div class="blog-card__author">by <a href="#">YuriPakin</a></div>
+                                </div>
+                                <h4 class="blog-card__title">
+                                    <a href="post.html" class="blog-card__title-link">Из Китая в
+                                        Байкал выехал грузовой поезд по новому грузовому
+                                        ж/д маршруту</a>
+                                </h4>
+                                <p class="blog-card__text">Добавляйте ваши машины и получайте предложения от
+                                    грузоотправителей.</p>
+                            </div>
+                            <div class="blog-card">
+                                <div class="blog-card__top">
+                                    <div class="blog-card__date">21 сентября, 2016, </div>
+                                    <div class="blog-card__author">by <a href="#">YuriPakin</a></div>
+                                </div>
+                                <h4 class="blog-card__title">
+                                    <a href="post.html" class="blog-card__title-link">ATI.SU: как цифровая трансформация
+                                        в логистике помогает экономить компаниям</a>
+                                </h4>
+                                <p class="blog-card__text">Транспортным компаниям и логистическим подразделениям
+                                    предприятий сложно обойтись без существенной автоматизации своей работы и перехода
+                                    на новые цифровые инструменты.</p>
+                            </div>
+                            <div class="blog-card">
+                                <div class="blog-card__top">
+                                    <div class="blog-card__date">26 мая, 2016, </div>
+                                    <div class="blog-card__author">by <a href="#">YuriPakin</a></div>
+                                </div>
+                                <h4 class="blog-card__title">
+                                    <a href="post.html" class="blog-card__title-link">Вовремя оформленные документы
+                                        сделают ваши сделки более эффективными</a>
+                                </h4>
+                                <p class="blog-card__text">Стремительный ритм современной жизни зачастую способствует
+                                    тому, что важные нюансы в бизнесе оказываются упущенными. В поисках решения проблем
+                                    люди всё чаще полагаются на удачу и многие вещи откладывают на потом</p>
+                            </div>
+                            <div class="blog-card">
+                                <div class="blog-card__top">
+                                    <div class="blog-card__date">20 октября, 2016, </div>
+                                    <div class="blog-card__author">by <a href="#">YuriPakin</a></div>
+                                </div>
+                                <h4 class="blog-card__title">
+                                    <a href="post.html" class="blog-card__title-link">Перевозка Нестандартного груза –
+                                        трансформаторы</a>
+                                </h4>
+                                <p class="blog-card__text">Вот небольшой взгляд на наш последний захватывающий проект:
+                                    Два трансформатора общим весом 270 тонн и 10 вагонов с дополнительным грузом
+                                    (комплектующие), идущие из порта Хихон в Испании через порт Вентспилс </p>
+                            </div>
+                            <div class="blog-card">
+                                <div class="blog-card__top">
+                                    <div class="blog-card__date">26 мая, 2016, </div>
+                                    <div class="blog-card__author">by <a href="#">YuriPakin</a></div>
+                                </div>
+                                <h4 class="blog-card__title">
+                                    <a href="post.html" class="blog-card__title-link">Вовремя оформленные документы
+                                        сделают ваши сделки более эффективными</a>
+                                </h4>
+                                <p class="blog-card__text">Стремительный ритм современной жизни зачастую способствует
+                                    тому, что важные нюансы в бизнесе оказываются упущенными. В поисках решения проблем
+                                    люди всё чаще полагаются на удачу и многие вещи откладывают на потом</p>
+                            </div>
+                            <div class="blog-card">
+                                <div class="blog-card__top">
+                                    <div class="blog-card__date">20 октября, 2016, </div>
+                                    <div class="blog-card__author">by <a href="#">YuriPakin</a></div>
+                                </div>
+                                <h4 class="blog-card__title">
+                                    <a href="post.html" class="blog-card__title-link">Перевозка Нестандартного груза –
+                                        трансформаторы</a>
+                                </h4>
+                                <p class="blog-card__text">Вот небольшой взгляд на наш последний захватывающий проект:
+                                    Два трансформатора общим весом 270 тонн и 10 вагонов с дополнительным грузом
+                                    (комплектующие), идущие из порта Хихон в Испании через порт Вентспилс </p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            @@include('partials/feedback.html',{img:true})
+
+            <!-- contacts------------------------------------------------------------------- -->
+            @@include('partials/contacts.html')
+
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

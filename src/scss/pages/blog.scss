@@ -1,0 +1,156 @@
+.blog {
+  margin-top: 69px;
+
+  @media (max-width: 650px) {
+    margin-top: 30px;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+.title-blog {
+  margin-bottom: 5px;
+  color: $black;
+
+  @media (max-width: 650px) {
+    margin-bottom: 10px;
+  }
+}
+.subtitle-blog {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 32px;
+  color: $grayA7;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.44;
+  margin-bottom: 70px;
+
+  @media (max-width: 650px) {
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+  }
+}
+
+.blog-card {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(222, 222, 222, 0.8);
+  background: $white;
+  min-height: 300px;
+  transition: 0.3s;
+  display: block;
+  position: relative;
+  background-position: 50px;
+
+  @media (max-width: 650px) {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  &:hover {
+    background: url(../../img/blog-item-bg.png);
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .blog-card__top,
+    .blog-card__title,
+    .blog-card__text {
+      color: $white;
+    }
+  }
+
+  .blog-card__top,
+  .blog-card__title,
+  .blog-card__text {
+    transition: 0.3s;
+  }
+
+  &__top {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+    color: $grayA7;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+
+    @media (max-width: 650px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__date {
+  }
+
+  &__author {
+    a {
+      position: relative;
+      z-index: 1;
+      color: $red;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $black;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @media (max-width: 650px) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__title-link {
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  &__text {
+    color: $grayA7;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
